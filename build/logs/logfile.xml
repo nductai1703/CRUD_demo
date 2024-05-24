@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.073427">
+    <testsuite name="App" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.073427">
+      <testsuite name="BookControllerTest" file="D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="0.073427">
+        <testcase name="testStore" class="BookControllerTest" classname="BookControllerTest" file="D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php" line="38" assertions="0" time="0.073427">
+          <error type="Error">BookControllerTest::testStore
+Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::withBody()
+
+D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php:49</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

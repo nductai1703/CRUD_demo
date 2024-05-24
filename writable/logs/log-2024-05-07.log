@@ -1,0 +1,180 @@
+ERROR - 2024-05-07 00:06:21 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-07 00:08:06 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-07 00:08:33 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-07 00:15:52 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+INFO - 2024-05-07 01:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 01:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 02:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 07:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 08:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 13:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 13:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 13:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 14:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 15:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,629 @@
+INFO - 2024-05-01 01:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 01:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 01:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 01:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 02:01:31 --> ErrorException: Attempt to read property "id" on array
+in APPPATH\Controllers\BookController.php on line 128.
+ 1 APPPATH\Controllers\BookController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Controllers\\BookController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->edit('OQ==')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+INFO - 2024-05-01 02:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 02:33:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin\layout\_main_layout.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin\\layout\\_main_layout.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 3 APPPATH\Views\Admin\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\index.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 7 APPPATH\Controllers\BookController.php(26): view('admin/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-05-01 02:34:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-05-01 02:34:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\create_book.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\create_book.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/create_book', [], true)
+11 APPPATH\Controllers\BookController.php(58): view('admin/create_book')
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->create()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-05-01 02:34:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-05-01 02:37:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\u_b\sign_in.php(2): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_in', [], true)
+ 7 APPPATH\Controllers\UserController.php(15): view('admin/u_b/sign_in')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->sign_in()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:38:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\u_b\sign_up.php(2): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_up.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_up', [], true)
+ 7 APPPATH\Controllers\UserController.php(11): view('admin/u_b/sign_up')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->sign_up()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 02:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 02:38:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 3 APPPATH\Controllers\BookController.php(26): view('admin/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:38:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/index', [], true)
+ 3 APPPATH\Controllers\BookController.php(26): view('admin/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 02:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 02:39:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\u_b\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/u_b/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:39:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\u_b\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/u_b/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:40:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('\\Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\u_b\index.php(2): CodeIgniter\View\View->include('\\Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/u_b/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:40:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('\\Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\u_b\index.php(2): CodeIgniter\View\View->include('\\Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/u_b/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:40:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\u_b\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/u_b/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 02:40:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout\header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout\\header.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layout\\header.php', null, true)
+ 3 APPPATH\Views\Admin\layout\_main_layout.php(1): CodeIgniter\View\View->include('layout\\header.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\layout\\_main_layout.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('Admin\\layout\\_main_layout.php', null, true)
+ 7 APPPATH\Views\Admin\u_b\index.php(2): CodeIgniter\View\View->include('Admin\\layout\\_main_layout.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\index.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/index', [], true)
+11 APPPATH\Controllers\BookController.php(26): view('admin/u_b/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 02:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 02:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-01 03:15:42 --> [DEPRECATED] base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\BookController.php on line 114.
+ 1 APPPATH\Controllers\BookController.php(114): base64_decode(null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 03:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-01 03:15:44 --> [DEPRECATED] base64_decode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\BookController.php on line 114.
+ 1 APPPATH\Controllers\BookController.php(114): base64_decode(null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 03:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 03:33:27 --> ErrorException: Attempt to read property "id" on null
+in APPPATH\Controllers\BookController.php on line 141.
+ 1 APPPATH\Controllers\BookController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\BookController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->editB('index.html')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 03:33:30 --> ErrorException: Attempt to read property "id" on null
+in APPPATH\Controllers\BookController.php on line 141.
+ 1 APPPATH\Controllers\BookController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\BookController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->editB('book')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 03:33:36 --> ErrorException: Attempt to read property "id" on null
+in APPPATH\Controllers\BookController.php on line 141.
+ 1 APPPATH\Controllers\BookController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\BookController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->editB('book')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 03:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 03:35:37 --> ErrorException: Attempt to read property "id" on null
+in APPPATH\Controllers\BookController.php on line 141.
+ 1 APPPATH\Controllers\BookController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\BookController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->editB('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 03:38:38 --> ErrorException: Attempt to read property "id" on null
+in APPPATH\Controllers\BookController.php on line 141.
+ 1 APPPATH\Controllers\BookController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\BookController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->editB('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 03:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 03:44:50 --> CodeIgniter\Encryption\Exceptions\EncryptionException: Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 126.
+ 1 SYSTEMPATH\Encryption\Encryption.php(126): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(252): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\BookController.php(184): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 03:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 03:49:27 --> CodeIgniter\Encryption\Exceptions\EncryptionException: Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 126.
+ 1 SYSTEMPATH\Encryption\Encryption.php(126): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(252): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\UserController.php(25): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 03:50:40 --> CodeIgniter\Encryption\Exceptions\EncryptionException: Encrypter needs a starter key.
+in SYSTEMPATH\Encryption\Encryption.php on line 126.
+ 1 SYSTEMPATH\Encryption\Encryption.php(126): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+ 2 SYSTEMPATH\Config\Services.php(252): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::encrypter()
+ 4 APPPATH\Controllers\UserController.php(59): CodeIgniter\Config\BaseService::__callStatic('encrypter', [])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 03:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 03:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 04:26:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/sign_up.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/sign_up.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/sign_up', [], true)
+ 3 APPPATH\Controllers\UserController.php(126): view('admin/sign_up', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 04:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 04:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 04:59:59 --> ErrorException: Undefined array key "username"
+in APPPATH\Views\Admin\u_b\sign_in.php on line 18.
+ 1 APPPATH\Views\Admin\u_b\sign_in.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_in', [], true)
+ 5 APPPATH\Controllers\UserController.php(48): view('admin/u_b/sign_in', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:01:45 --> ErrorException: Undefined property: stdClass::$password
+in APPPATH\Controllers\UserController.php on line 60.
+ 1 APPPATH\Controllers\UserController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$password', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\UserController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:01:51 --> ErrorException: Undefined property: stdClass::$password
+in APPPATH\Controllers\UserController.php on line 60.
+ 1 APPPATH\Controllers\UserController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$password', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\UserController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-01 05:03:42 --> ErrorException: Undefined property: stdClass::$password
+in APPPATH\Controllers\UserController.php on line 60.
+ 1 APPPATH\Controllers\UserController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$password', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\UserController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:03:47 --> ErrorException: Undefined array key "username"
+in APPPATH\Views\Admin\u_b\sign_in.php on line 18.
+ 1 APPPATH\Views\Admin\u_b\sign_in.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_in', [], true)
+ 5 APPPATH\Controllers\UserController.php(48): view('admin/u_b/sign_in', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:04:37 --> ErrorException: Undefined array key "username"
+in APPPATH\Views\Admin\u_b\sign_in.php on line 18.
+ 1 APPPATH\Views\Admin\u_b\sign_in.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_in', [], true)
+ 5 APPPATH\Controllers\UserController.php(48): view('admin/u_b/sign_in', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:13:18 --> ErrorException: Undefined property: stdClass::$password
+in APPPATH\Controllers\UserController.php on line 60.
+ 1 APPPATH\Controllers\UserController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$password', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Controllers\\UserController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:14:48 --> ErrorException: Undefined array key "username"
+in APPPATH\Views\Admin\u_b\sign_in.php on line 18.
+ 1 APPPATH\Views\Admin\u_b\sign_in.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_in', [], true)
+ 5 APPPATH\Controllers\UserController.php(48): view('admin/u_b/sign_in', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-01 05:16:40 --> ErrorException: Undefined array key "username"
+in APPPATH\Views\Admin\u_b\sign_in.php on line 18.
+ 1 APPPATH\Views\Admin\u_b\sign_in.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\app\\Views\\Admin\\u_b\\sign_in.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/u_b/sign_in', [], true)
+ 5 APPPATH\Controllers\UserController.php(48): view('admin/u_b/sign_in', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-01 05:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-01 05:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

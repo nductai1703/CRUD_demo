@@ -1,0 +1,219 @@
+INFO - 2024-05-06 12:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 12:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 13:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 13:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-06 13:21:17 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\CodeIgniter.php(941): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 D:\Test_BTL\codeigniter4-testing - test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Test_BTL\codeigniter4-testing - test\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Test_BTL\codeigniter4-testing - test\system\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\cod...')
+#11 {main}
+CRITICAL - 2024-05-06 13:21:17 --> CodeIgniter\Database\Exceptions\DatabaseException: SQLite3::query(): Unable to prepare statement: 1, no such table: books
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM books')
+ 2 APPPATH\Controllers\BookController.php(19): App\Models\Book->get_all()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-06 13:21:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: SQLite3::query(): Unable to prepare statement: 1, no such table: books
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 151.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM books')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM books')
+ 3 APPPATH\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM books')
+ 4 APPPATH\Controllers\BookController.php(19): App\Models\Book->get_all()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-06 13:21:17 --> [Caused by] ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such table: books', 'D:\\Test_BTL\\codeigniter4-testing - test\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM books')
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM books')
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM books')
+ 5 APPPATH\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM books')
+ 6 APPPATH\Controllers\BookController.php(19): App\Models\Book->get_all()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-06 13:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 13:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-06 13:25:06 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\CodeIgniter.php(941): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+#8 D:\Test_BTL\codeigniter4-testing - test\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Test_BTL\codeigniter4-testing - test\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Test_BTL\codeigniter4-testing - test\system\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\cod...')
+#11 {main}
+CRITICAL - 2024-05-06 13:25:06 --> CodeIgniter\Database\Exceptions\DatabaseException: SQLite3::query(): Unable to prepare statement: 1, no such table: books
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM books')
+ 2 APPPATH\Controllers\BookController.php(19): App\Models\Book->get_all()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-06 13:25:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: SQLite3::query(): Unable to prepare statement: 1, no such table: books
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 151.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM books')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM books')
+ 3 APPPATH\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM books')
+ 4 APPPATH\Controllers\BookController.php(19): App\Models\Book->get_all()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\codeigniter4-testing - test\\public\\index.php')
+CRITICAL - 2024-05-06 13:25:06 --> [Caused by] ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 146.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(): Unable to prepare statement: 1, no such table: books', 'D:\\Test_BTL\\codeigniter4-testing - test\\system\\Database\\SQLite3\\Connection.php', 146)
+ 2 SYSTEMPATH\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM books')
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM books')
+ 4 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM books')
+ 5 APPPATH\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM books')
+ 6 APPPATH\Controllers\BookController.php(19): App\Models\Book->get_all()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BookController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Test_BTL\\codeigniter4-testing - test\\public\\index.php')
+INFO - 2024-05-06 13:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 13:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 13:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 13:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-06 13:28:26 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(22): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-06 15:07:08 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(27): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-06 15:40:52 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-06 16:21:06 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}
+ERROR - 2024-05-06 16:21:31 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: books in D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php:146
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'D:\\Test_BTL\\cod...', 146)
+#1 D:\Test_BTL\codeigniter4-testing - test\system\Database\SQLite3\Connection.php(146): SQLite3->query('SELECT * FROM b...')
+#2 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(693): CodeIgniter\Database\SQLite3\Connection->execute('SELECT * FROM b...')
+#3 D:\Test_BTL\codeigniter4-testing - test\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#4 D:\Test_BTL\codeigniter4-testing - test\app\Models\Book.php(50): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#5 D:\Test_BTL\codeigniter4-testing - test\app\Controllers\BookController.php(19): App\Models\Book->get_all()
+#6 D:\Test_BTL\codeigniter4-testing - test\system\Test\ControllerTestTrait.php(164): App\Controllers\BookController->index()
+#7 D:\Test_BTL\codeigniter4-testing - test\tests\unit\BookControllerTest.php(25): BookControllerTest->execute('index')
+#8 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): BookControllerTest->testIndex()
+#9 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#10 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#11 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(BookControllerTest))
+#12 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#16 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#17 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#18 D:\Test_BTL\codeigniter4-testing - test\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#19 D:\Test_BTL\codeigniter4-testing - test\vendor\bin\phpunit(122): include('D:\\Test_BTL\\cod...')
+#20 {main}

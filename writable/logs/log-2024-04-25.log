@@ -1,0 +1,343 @@
+CRITICAL - 2024-04-25 10:35:48 --> CodeIgniter\Filters\Exceptions\FilterException: "Auth" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('Auth')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('Auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+ERROR - 2024-04-25 16:34:22 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', Array, NULL, 'username')
+#6 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', Array, Array)
+#7 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\app\Controllers\UserController.php(49): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+#10 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+#11 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\...')
+#14 {main}
+CRITICAL - 2024-04-25 16:34:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-04-25 16:34:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 7 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-04-25 16:34:22 --> [Caused by] mysqli_sql_exception: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+ERROR - 2024-04-25 16:36:24 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', Array, NULL, 'username')
+#6 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', Array, Array)
+#7 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\app\Controllers\UserController.php(49): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+#10 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+#11 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\...')
+#14 {main}
+CRITICAL - 2024-04-25 16:36:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-04-25 16:36:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 7 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-04-25 16:36:24 --> [Caused by] mysqli_sql_exception: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+ERROR - 2024-04-25 16:36:33 --> mysqli_sql_exception: Unknown column 'username' in 'where clause' in C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', Array, NULL, 'username')
+#6 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', Array, Array)
+#7 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\app\Controllers\UserController.php(49): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+#10 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+#11 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\admin\Downloads\codeigniter4-framework-v4.4.6-0-g7d393f8\codeigniter4-testing\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\...')
+#14 {main}
+CRITICAL - 2024-04-25 16:36:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-04-25 16:36:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 7 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+CRITICAL - 2024-04-25 16:36:33 --> [Caused by] mysqli_sql_exception: Unknown column 'username' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pntuananh\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('pntuananh', 'username', [...], null, 'username')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pntuananh', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(49): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+INFO - 2024-04-25 16:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 16:37:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "sign_up.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sign_up.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sign_up', [], true)
+ 3 APPPATH\Controllers\UserController.php(55): view('sign_up', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+INFO - 2024-04-25 16:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 16:49:17 --> Error: Call to undefined function display_form_error()
+in APPPATH\Views\Admin\sign_up.php on line 15.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/sign_up', [], true)
+ 4 APPPATH\Controllers\UserController.php(65): view('admin/sign_up', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+INFO - 2024-04-25 16:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 16:52:30 --> ErrorException: Undefined array key "repassword"
+in APPPATH\Views\Admin\sign_up.php on line 39.
+ 1 APPPATH\Views\Admin\sign_up.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "repassword"', 'C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\sign_up.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\app\\Views\\Admin\\sign_up.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/sign_up', [], true)
+ 5 APPPATH\Controllers\UserController.php(65): view('admin/sign_up', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+INFO - 2024-04-25 16:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 16:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-25 16:58:27 --> Error: Call to undefined function display_form_error()
+in APPPATH\Views\Admin\sign_up.php on line 19.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/sign_up', [], true)
+ 4 APPPATH\Controllers\UserController.php(65): view('admin/sign_up', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usercontroller->check_reg()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usercontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\admin\\Downloads\\codeigniter4-framework-v4.4.6-0-g7d393f8\\codeigniter4-testing\\public\\index.php')
+INFO - 2024-04-25 17:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-25 17:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
